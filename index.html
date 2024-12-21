@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/737697f4b3.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <div class="list">
+        <div class="formulario">
+            <h1>Todo List</h1>
+            <p>Nueva tarea</p>
+            <form id="formulario">
+                <input type="text" id="tarea" placeholder="">
+                <input type="submit" value="Agregar">
+            </form>
+            <div class="datos">
+                <p>Total: <span id="total-tareas">0</span></p>
+                <p>Realizadas: <span id="total-realizadas">0</span></p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tarea</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="lista-tareas"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
