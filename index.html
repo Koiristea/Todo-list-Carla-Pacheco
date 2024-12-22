@@ -9,30 +9,36 @@
     <script src="./assets/js/script.js" defer></script>
 </head>
 <body>
-    <div class="list">
-        <div class="formulario">
-            <h1>Todo List</h1>
-            <p>Nueva tarea</p>
-            <form id="formulario">
-                <input type="text" id="tarea" placeholder="">
-                <input type="submit" value="Agregar">
-            </form>
-            <div class="datos">
-                <p>Total: <span id="total-tareas">0</span></p>
-                <p>Realizadas: <span id="total-realizadas">0</span></p>
-            </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Tarea</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="lista-tareas"></tbody>
-            </table>
-        </div>
-    </div>
+    <main>
+        <section>
+            <header>
+                <div class="separation">
+                    <h1>Todo List</h1>
+                    <p>Nueva tarea</p>
+                    <form id="formulario">
+                        <input class="ingresa" type="text" id="tarea" placeholder="Ingresa tu tarea">
+                        <input class="enter" type="submit" value="Agregar">
+                    </form>
+                    <div class="resume">
+                        <div class="datos">
+                            <p>Total: <span id="total-tareas">0</span></p>
+                            <p>Realizadas: <span id="total-realizadas">0</span></p>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="tare">ID</th>
+                                    <th class="equis">Tarea</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="lista-tareas"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </header>
+        </section>
+    </main>
 </body>
 </html>

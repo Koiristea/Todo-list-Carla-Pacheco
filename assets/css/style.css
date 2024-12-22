@@ -1,8 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main {
+    background-color: #FFDDD4;
+    height: 100vh;
+    display: flex;
+}
+
+i {
+    font-size: 30px;
+}
+
+input {
+    width: 25px;
+    height: 25px;
+}
+
 button {
     background: none;
     border: none;
 }
 
-i {
-    font-size: 18px;
+section {
+    background-color: #F2F3F5;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    border-radius: 5vh;
+    padding: 15px;
+}
+
+header {
+    color: #1b364a;
+    width: 100%;
+    & h1 {
+        font-size: 4vh;
+        border-bottom: solid 1.6px #1b364a;
+    }
+    & p {
+        font-size: 2vh;
+        margin: 15px 0;
+    }
+}
+
+.separation {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
+    & .ingresa {
+        height: 40px;
+        border: 2px solid #1b364a;
+        font-size: 2vh;
+        padding-left: 2vh;
+        width: 74%;
+    }
+    & .enter {
+        height: 40px;
+        border-radius: 5%;
+        background-color: #1b364a;
+        font-size: 2vh;
+        color: #F2F3F5;
+        width: 20%;
+        margin-right: 1vh;
+    }
+}
+
+.resume {
+    display: flex;
+    justify-content: space-between;
+}
+
+.datos {
+    width: 30%;
+    & p {
+        font-size: 2.5vh;
+    }
+}
+
+table {
+    width: 40%;
+    font-size: 2.5vh;
+    margin: 3vh;
+}
+
+td {
+    width: 20px;
+}
+
+tr {
+    text-align: left;
+}
+
+.tare {
+    padding-right: 5px;
+}
+
+.equis {
+    width: 100px;
+}
+
+tbody {
+    justify-content: space-between;
 }
