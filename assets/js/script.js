@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td>${tarea.id}</td>
-                <td style="text-decoration: ${tarea.completado ? 'line-through' : 'none'};">${tarea.descripcion}</td>
-                <td>
+                <td style="text-decoration: ${tarea.completado ? 'line-through' : 'none'}; font-family: ${tarea.completado ? 'Courier New, Courier, monospace' : 'inherit'};">${tarea.descripcion}</td>                <td>
                     <input type="checkbox" ${tarea.completado ? 'checked' : ''} data-id="${tarea.id}">
                 </td>
                 <td>
